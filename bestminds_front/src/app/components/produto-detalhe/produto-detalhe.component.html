@@ -1,0 +1,27 @@
+<h1 class="h1 text-center mb-4">Produto</h1>
+
+<form #produtoForm="ngForm" (ngSubmit)="onSubmit()">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Código</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Preço</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>{{ produto?.codigo }}</td>
+        <td><input type="text" [(ngModel)]="produto.nome" name="nome" id="nome" required class="form-control"></td>
+        <td><input type="text" [(ngModel)]="produto.descricao" name="descricao" id="descricao" required class="form-control"></td>
+        <td><input type="number" [(ngModel)]="produto.preco" name="preco" id="preco" required class="form-control"></td>
+        <td><button type="submit" class="btn btn-primary">Salvar</button></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
