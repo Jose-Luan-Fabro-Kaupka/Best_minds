@@ -1,4 +1,4 @@
-<h1 class="h1 text-center mb-4">Produtos</h1>
+<h1 class="h1 text-center mb-4">Nunes Sports</h1>
 
 <table class="table">
   <thead class="thead-dark">
@@ -19,7 +19,7 @@
       <td>{{produto.nome}}</td>
       <td>{{produto.descricao}}</td>
       <td>{{produto.preco}}</td>
-      <td><a [routerLink]="['/produtos', produto.codigo]">Visualizar</a></td>
+      <td><a [routerLink]="['/produtos', produto.codigo]">Editar</a></td>
       <td><button (click)="excluirProduto(produto.codigo)" class="btn btn-danger">Excluir</button></td>
     </tr>
   </tbody>
